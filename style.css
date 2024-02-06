@@ -11,8 +11,8 @@ html {
 
 .arrow-start {
   position: fixed;
-  margin-left: 95%;
-  margin-top: 500px;
+  margin-left: 95vw;
+  margin-top: 80vh;
 }
 
 .arrow-start:hover {
@@ -68,6 +68,17 @@ html {
   justify-content: center;
   padding-left: 20%;
 }
+
+/* Resolvendo risco roxo que ficava aparente  */
+.social-media{
+  display: flex;
+  gap: .7rem;
+}
+.link-git{
+  height: max-content;
+  width: max-content;
+}
+/*  */
 
 .linkedinimg:hover, .githubImg:hover {
   transform: translateY(-15%);
@@ -200,13 +211,19 @@ html {
   font-size: 30px;
   color: #fff;
   text-transform: uppercase;
-  padding-top: 70px;
-  padding-bottom: 20px;
+}
+
+.skills-conteiner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .3rem;
 }
 
 .projetos {
   display: flex;
-  height: 115vh;
+  height: 100vh; /* sempre é melhor deixar do tamanho da visualixação do usuário */
   justify-content: center;
   padding-top: 50px;
 }
@@ -219,7 +236,7 @@ html {
 }
 
 .cliqueInImage {
-  text-align: start;
+  text-align: center; /* no meu monitor grande ficou desalinhado */
   color: #ff0000;
   text-transform: uppercase;
   transform: rotate(-180deg);
@@ -338,15 +355,12 @@ html {
     max-width: 100vw;
   }
 
-  .arrow-start {
-    position: fixed;
-    margin-left: 40%;
-    margin-top: 1200px;
-  }
-
   .head-principal {
+    display: flex;
+    text-align: center;
+    justify-content: center;
     height: 60vh;
-    width: 100vh;
+    width: 100vw; /* vh= ViewHeight altura da visualização, vw= ViewWidht largura da visualização */
     background-image: url("./assets/vitrine-de-produtos-com-fundo-de-sala-de-estudio-preto-em-destaque-como-montagem-para-exibicao-de-produtos.jpg");
     background-size: 1000px;
     background-repeat: no-repeat;
@@ -358,8 +372,23 @@ html {
 
   .img-div {
     position: absolute;
-    right: 14%;
+    right: 21%;
     top: 2%;
+  }
+
+  .social-media a img{
+    padding: 0;
+    margin: 0;
+  }
+
+  .social-media a{
+    height: max-content;
+    width: max-content;
+  }
+
+  .social-media{
+    display: flex;
+    align-items: center;
   }
   
   .githubImg { 
@@ -369,23 +398,12 @@ html {
   
   .information-head {
     text-align: center;
+    align-items: center;
     margin-top: 320px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0;
+    
   }
 
-  .meuNome {
-    margin-left: 20px;
-  }
-
-  .boasVindas {
-    margin-left: 30px;
-  }
-
-  .minhaFuncao {
-    margin-left: 20px;
-  }
-  
   .about-me {
     display: flex;
     flex-direction: column;
@@ -393,6 +411,12 @@ html {
     align-items: center;
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  .arrow-start {
+    position: fixed;
+    margin-left: 85vw;
+    margin-top: 90vh;
   }
 
   .bioDesc {
@@ -410,9 +434,6 @@ html {
     height: 230px;
   }
 
-  .mySkills {
-    padding-top: 30px;
-  }
 
   .skills-icons {
     width: 70px;
@@ -420,7 +441,10 @@ html {
   }
 
   .skills-conteiner {
-    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
   }
 
   .cliqueInImage {
@@ -523,4 +547,8 @@ html {
     background-color: #a70c0c;    
   }
   
+  .principal-page{
+    display: flex;
+  }
+
 }
