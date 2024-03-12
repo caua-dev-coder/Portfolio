@@ -11,8 +11,9 @@ html {
 
 .arrow-start {
   position: fixed;
-  margin-left: 95%;
-  margin-top: 500px;
+  margin-left: 95vw;
+  margin-top: 90vh;
+  z-index: 1;
 }
 
 .arrow-start:hover {
@@ -26,9 +27,16 @@ html {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  position: fixed;
+  min-width: 100vw;
   gap: 50px;
   padding: 20px 50px 15px 0;
-  background-color: rgb(41, 38, 38);
+  background: rgba(0, 0, 0, 0.69);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.3px);
+  -webkit-backdrop-filter: blur(8.3px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .nav-btn {
@@ -46,8 +54,6 @@ html {
 }
 
 .nav-btn:active {
-  text-shadow: 0 0 20px #ff0000;
-  color: #ff5e00;
   transition: all 0.5s ease-in-out;
   transform: scale(1.2);
 }
@@ -67,6 +73,15 @@ html {
   align-items: start;
   justify-content: center;
   padding-left: 20%;
+}
+
+.social-media{
+  display: flex;
+  gap: .7rem;
+}
+.link-git{
+  height: max-content;
+  width: max-content;
 }
 
 .linkedinimg:hover, .githubImg:hover {
@@ -133,8 +148,6 @@ html {
   flex-direction: column;
   height: 100vh;
   align-items: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
 }
 
 .my-prof {
@@ -206,7 +219,7 @@ html {
 
 .projetos {
   display: flex;
-  height: 115vh;
+  height: 125vh;
   justify-content: center;
   padding-top: 50px;
 }
@@ -219,15 +232,12 @@ html {
 }
 
 .cliqueInImage {
-  text-align: start;
   color: #ff0000;
+  text-align: center;
   text-transform: uppercase;
-  transform: rotate(-180deg);
   font-weight: bold;
-  font-size: 30px;
-  writing-mode: vertical-lr;
-  margin-right: 30px;
-  margin-bottom: 130px;
+  font-size: 25px;
+  margin-top: 30px;
 }
 
 .projects p {
@@ -270,10 +280,10 @@ html {
   flex-direction: column;
   height: 100vh;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 150px;
+  background-image: url("./assets/vitrine-de-produtos-com-fundo-de-sala-de-estudio-preto-em-destaque-como-montagem-para-exibicao-de-produtos.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url("./assets/vitrine-de-produtos-com-fundo-de-sala-de-estudio-preto-em-destaque-como-montagem-para-exibicao-de-produtos.jpg");
 }
 
 .contact h3 {
@@ -327,9 +337,7 @@ html {
 }
 
 /* Respoonse 600px */
-
-
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .nav-menu {
     display: none;
   }
@@ -340,50 +348,36 @@ html {
 
   .arrow-start {
     position: fixed;
-    margin-left: 40%;
-    margin-top: 1200px;
   }
 
   .head-principal {
-    height: 60vh;
-    width: 100vh;
+    height: 100vh;
+    width: 100vw;
     background-image: url("./assets/vitrine-de-produtos-com-fundo-de-sala-de-estudio-preto-em-destaque-como-montagem-para-exibicao-de-produtos.jpg");
-    background-size: 1000px;
+    background-size: 2000px;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
   }
 
   .head-img {
-    width: 300px;
+    width: 250px;
   }
 
   .img-div {
     position: absolute;
-    right: 14%;
-    top: 2%;
-  }
-  
-  .githubImg { 
-    padding-top: 10px;
-    margin-left: 27vw;
+    right: 35%;
+    left: 32%;
+    top: 10%;
   }
   
   .information-head {
-    text-align: center;
-    margin-top: 320px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .meuNome {
-    margin-left: 20px;
-  }
-
-  .boasVindas {
-    margin-left: 30px;
-  }
-
-  .minhaFuncao {
-    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
   }
   
   .about-me {
@@ -391,22 +385,18 @@ html {
     flex-direction: column;
     height: 100vh;
     align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 20px 40px 0px 40px;
   }
 
   .bioDesc {
     font-size: 20px;
     text-align: center;
     width: 300px;
-    padding-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 
   .skills {
     justify-content: center;
-    margin-top: 250px;
+    margin-top: 500px;
     height: 230px;
   }
 
@@ -428,31 +418,7 @@ html {
   }
 
   .boxImages {    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    width: 330px;
-    height: 120vh;
-  }
-
-  .projectImgs, .projectImgsLinks {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 0 10px #ff0000, inset 0 0 10px #ff0000;
-    border-radius: 10px;
-    filter: grayscale(0%);
-    width: 300px;
-    height: 200px;
-  }
-
-  .projectImgs:hover {
-    width: 300px;
-    filter: grayscale(0%);
+    display: none;
   }
 
   .contact {
