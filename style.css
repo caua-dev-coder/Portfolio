@@ -12,12 +12,8 @@ html {
 .arrow-start {
   position: fixed;
   margin-left: 95vw;
-<<<<<<< HEAD
   margin-top: 90vh;
   z-index: 1;
-=======
-  margin-top: 80vh;
->>>>>>> 23e5495345f61bb546720233b3215a84e296b87c
 }
 
 .arrow-start:hover {
@@ -79,10 +75,6 @@ html {
   padding-left: 20%;
 }
 
-<<<<<<< HEAD
-=======
-/* Resolvendo risco roxo que ficava aparente  */
->>>>>>> 23e5495345f61bb546720233b3215a84e296b87c
 .social-media{
   display: flex;
   gap: .7rem;
@@ -91,10 +83,6 @@ html {
   height: max-content;
   width: max-content;
 }
-<<<<<<< HEAD
-=======
-/*  */
->>>>>>> 23e5495345f61bb546720233b3215a84e296b87c
 
 .linkedinimg:hover, .githubImg:hover {
   transform: translateY(-15%);
@@ -225,23 +213,13 @@ html {
   font-size: 30px;
   color: #fff;
   text-transform: uppercase;
-}
-
-.skills-conteiner{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: .3rem;
+  padding-top: 70px;
+  padding-bottom: 20px;
 }
 
 .projetos {
   display: flex;
-<<<<<<< HEAD
   height: 125vh;
-=======
-  height: 100vh; /* sempre é melhor deixar do tamanho da visualixação do usuário */
->>>>>>> 23e5495345f61bb546720233b3215a84e296b87c
   justify-content: center;
   padding-top: 50px;
 }
@@ -254,10 +232,6 @@ html {
 }
 
 .cliqueInImage {
-<<<<<<< HEAD
-=======
-  text-align: center; /* no meu monitor grande ficou desalinhado */
->>>>>>> 23e5495345f61bb546720233b3215a84e296b87c
   color: #ff0000;
   text-align: center;
   text-transform: uppercase;
@@ -372,7 +346,6 @@ html {
     max-width: 100vw;
   }
 
-<<<<<<< HEAD
   .arrow-start {
     position: fixed;
   }
@@ -380,14 +353,6 @@ html {
   .head-principal {
     height: 100vh;
     width: 100vw;
-=======
-  .head-principal {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    height: 60vh;
-    width: 100vw; /* vh= ViewHeight altura da visualização, vw= ViewWidht largura da visualização */
->>>>>>> 23e5495345f61bb546720233b3215a84e296b87c
     background-image: url("./assets/vitrine-de-produtos-com-fundo-de-sala-de-estudio-preto-em-destaque-como-montagem-para-exibicao-de-produtos.jpg");
     background-size: 2000px;
     background-repeat: no-repeat;
@@ -403,7 +368,6 @@ html {
 
   .img-div {
     position: absolute;
-<<<<<<< HEAD
     right: 35%;
     left: 32%;
     top: 10%;
@@ -416,52 +380,12 @@ html {
     margin-top: 200px;
   }
   
-=======
-    right: 21%;
-    top: 2%;
-  }
-
-  .social-media a img{
-    padding: 0;
-    margin: 0;
-  }
-
-  .social-media a{
-    height: max-content;
-    width: max-content;
-  }
-
-  .social-media{
-    display: flex;
-    align-items: center;
-  }
-  
-  .githubImg { 
-    padding-top: 10px;
-    margin-left: 27vw;
-  }
-  
-  .information-head {
-    text-align: center;
-    align-items: center;
-    margin-top: 320px;
-    padding: 0;
-    
-  }
-
->>>>>>> 23e5495345f61bb546720233b3215a84e296b87c
   .about-me {
     display: flex;
     flex-direction: column;
     height: 100vh;
     align-items: center;
     padding: 20px 40px 0px 40px;
-  }
-
-  .arrow-start {
-    position: fixed;
-    margin-left: 85vw;
-    margin-top: 90vh;
   }
 
   .bioDesc {
@@ -476,6 +400,9 @@ html {
     height: 230px;
   }
 
+  .mySkills {
+    padding-top: 30px;
+  }
 
   .skills-icons {
     width: 70px;
@@ -483,10 +410,7 @@ html {
   }
 
   .skills-conteiner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+    height: 20px;
   }
 
   .cliqueInImage {
@@ -565,8 +489,4 @@ html {
     background-color: #a70c0c;    
   }
   
-  .principal-page{
-    display: flex;
-  }
-
 }
