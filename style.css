@@ -336,8 +336,8 @@ html {
   background-color: #a70c0c;    
 }
 
-/* Respoonse 600px */
-@media (max-width: 700px) {
+/* Response 700px */
+@media (max-width: 915px) {
   .nav-menu {
     display: none;
   }
@@ -348,12 +348,12 @@ html {
 
   .arrow-start {
     position: fixed;
+    margin-left: 85vw;
   }
 
   .head-principal {
     height: 100vh;
     width: 100vw;
-    background-image: url("./assets/vitrine-de-produtos-com-fundo-de-sala-de-estudio-preto-em-destaque-como-montagem-para-exibicao-de-produtos.jpg");
     background-size: 2000px;
     background-repeat: no-repeat;
     display: flex;
@@ -383,9 +383,13 @@ html {
   .about-me {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 85vh;
     align-items: center;
     padding: 20px 40px 0px 40px;
+  }
+  
+  .myBio {
+    font-size: 30px;
   }
 
   .bioDesc {
@@ -405,7 +409,7 @@ html {
   }
 
   .skills-icons {
-    width: 70px;
+    width: 90px;
     padding-right: 20px;
   }
 
@@ -424,9 +428,10 @@ html {
   .contact {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    padding-top: 30px;
+    height: 115vh;
     align-items: center;
-    margin-top: 270px;
+    justify-content: start;
     background-size: 500%;
     background-repeat: no-repeat;
     background-image: url("./assets/vitrine-de-produtos-com-fundo-de-sala-de-estudio-preto-em-destaque-como-montagem-para-exibicao-de-produtos.jpg");
@@ -464,7 +469,8 @@ html {
   
   .mail, .phone {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding-bottom: 10px;
     color: white;
     margin-left: 20px;
     justify-content: center;
@@ -490,3 +496,89 @@ html {
   }
   
 }
+
+
+/* Response 500px */
+@media screen and (min-width: 400px) and (max-width: 620px) {
+
+  .head-principal {
+    height: 100vh;
+    width: 100vw;
+    background-size: 2000px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  .social-media {
+    gap: 40px;
+  }
+
+  .head-img {
+    width: 250px;
+  }
+
+  .img-div {
+    position: absolute;
+    right: 32%;
+    left: 27%;
+    top: 10%;
+  }
+  
+  .information-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+  }
+  
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    align-items: center;
+    padding: 20px 40px 0px 40px;
+  }
+  
+  .myBio {
+    font-size: 30px;
+  }
+
+  .bioDesc {
+    font-size: 20px;
+    text-align: center;
+    width: 300px;
+  }
+
+  .skills {
+    justify-content: center;
+    margin-top: 500px;
+    height: 230px;
+  }
+
+  .mySkills {
+    padding-top: 30px;
+  }
+
+  .skills-icons {
+    width: 90px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  
+  .mail, .phone {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    color: white;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+  }
+
+ }
