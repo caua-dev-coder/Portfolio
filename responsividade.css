@@ -1,0 +1,370 @@
+/* Para Tablets */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .arrow-start {
+    display: none;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .information-head {
+    align-items: center;
+    gap: 0.5;
+    padding-left: 0;
+  }
+
+  .head-principal {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-height: 90vh;
+    max-width: 100vw;
+    background-size: 130%;
+  }
+
+  .img-div {
+    position: static;
+    margin-top: 10px;
+  }
+
+  .head-img {
+    min-width: 200px;
+    max-width: 300px;
+  }
+
+  .minhaFuncao {
+    font-size: 2rem;
+  }
+
+  .about-me {
+    justify-content: center;
+    padding-top: 0px;
+  }
+  .my-prof {
+    max-width: 220px;
+    min-width: 100px;
+    height: 200px;
+  }
+
+  .myBio {
+    font-size: 20px;
+  }
+
+  .bioDesc {
+    width: 500px;
+  }
+
+  .buttonCV {
+    padding: 10px 30px;
+    text-align: center;
+  }
+
+  .skills {
+    height: 40vh;
+  }
+
+  .mySkills {
+    font-size: 25px;
+  }
+
+  .skills-icons {
+    width: 80px;
+  }
+  
+  .projetos{
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .boxImages {
+    display: none;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 20px;
+    background-size: 160%;
+  }
+
+  .contact h4 {
+    padding-top: 10px;
+  }
+
+  .paragraphContact {
+    font-size: 20px;
+    text-align: center;
+    width: 500px;
+    padding-bottom: 20px;
+    color: white;
+  }
+
+}
+
+/* Para Celulares 768px */
+
+@media (max-width: 768px) {
+  .arrow-start {
+    display: none;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .information-head {
+    align-items: center;
+    gap: 0.5;
+    padding-left: 0;
+  }
+
+  .boasVindas {
+    font-size: 10px;
+  }
+
+  .minhaFuncao {
+    font-size: 1.5rem;
+  }
+
+  .meuNome {
+    font-size: 1rem;
+  }
+
+  .head-principal {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-height: 50vh;
+    max-width: 100vw;
+    background-size: 150%;
+  }
+
+  .img-div {
+    position: static;
+    margin-top: 30px;
+  }
+
+  .head-img {
+    max-width:150px;
+  }
+
+  .boasVindas {
+    font-size: 1rem;
+  }
+
+  .linkedinimg, .githubImg {
+    width: 40px;
+  }
+
+  .meuNome {
+    font-size: 2rem;
+  }
+
+  .about-me {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+
+  .my-prof {
+    width: 140px;
+    height: 130px;
+  }
+
+  .myBio {
+    font-size: 20px;
+  }
+
+  .bioDesc {
+    max-width: 300px;
+    line-break: auto;
+  }
+
+  .skills {
+    max-height: 100vh;
+    width: 100vw;
+    background-size: 100%;
+    padding-top: 30px;
+    margin-top: 250px;
+  }
+
+  .skills-conteiner{
+    height: 100vh;
+  }
+
+  .mySkills {
+    font-size: 25px;
+    padding-top: 30px;
+  }
+
+  .skills-icons {
+    width: 80px;
+  }
+  
+  .projetos{
+    height: 100vh;
+  }
+
+  .boxImages {
+    display: none;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    max-width: 100vw;
+    padding-top: 100px;
+    background-size: 270%;
+  }
+
+  .contact h4 {
+    padding-top: 10px;
+  }
+
+  .paragraphContact {
+    font-size: 20px;
+    text-align: center;
+    width: 500px;
+    padding-bottom: 20px;
+    color: white;
+  }
+}
+
+/* Para celulares 600px */
+@media (max-width: 500px) {
+
+  .arrow-start {
+    display: none;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .information-head {
+    align-items: center;
+    gap: 0.5;
+    padding-left: 0;
+  }
+
+  .boasVindas {
+    font-size: 10px;
+  }
+
+  .minhaFuncao {
+    font-size: 1.5rem;
+  }
+
+  .meuNome {
+    font-size: 1rem;
+  }
+
+  .head-principal {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-height: 50vh;
+    max-width: 100vw;
+    background-size: 300%;
+  }
+
+  .img-div {
+    position: static;
+    margin-top: 30px;
+  }
+
+  .head-img {
+    max-width:150px;
+  }
+
+  .boasVindas {
+    font-size: 1rem;
+  }
+
+  .linkedinimg, .githubImg {
+    width: 40px;
+  }
+
+  .meuNome {
+    font-size: 2rem;
+  }
+
+  .about-me {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+
+  .my-prof {
+    width: 140px;
+    height: 130px;
+  }
+
+  .myBio {
+    font-size: 20px;
+  }
+
+  .bioDesc {
+    max-width: 300px;
+    line-break: auto;
+  }
+
+  .skills {
+    max-height: 100vh;
+    width: 100vw;
+    background-size: 100%;
+    padding-top: 30px;
+    margin-top: 250px;
+  }
+
+  .skills-conteiner{
+    height: 100vh;
+  }
+
+  .mySkills {
+    font-size: 25px;
+  }
+
+  .skills-icons {
+    width: 80px;
+  }
+  
+  .projetos{
+    height: 100vh;
+  }
+
+  .boxImages {
+    display: none;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    max-width: 100vw;
+    padding-top: 100px;
+    background-size: 230%;
+  }
+
+  .contact h4 {
+    padding-top: 10px;
+  }
+
+  .paragraphContact {
+    font-size: 20px;
+    text-align: center;
+    width: 500px;
+    padding-bottom: 20px;
+    color: white;
+  }
+
+}
